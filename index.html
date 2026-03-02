@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="基于 OpenClaw 与 Codex/Claude Code 的双层架构 Agent 集群系统工作流">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- 引入 Docsify 的 Vue 风格主题 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* 简单的自定义美化 */
     :root {
       --theme-color: #3eaf7c;
     }
@@ -27,7 +25,7 @@
       auto2top: true,
       maxLevel: 3,
       subMaxLevel: 2,
-      search: 'auto', // 默认支持搜索
+      search: 'auto',
     }
   </script>
   <!-- Docsify v4 核心 -->
@@ -37,5 +35,15 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+
+  <!-- 引入 Mermaid 支持，将代码块自动渲染为图表 -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default'
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 </body>
 </html>
