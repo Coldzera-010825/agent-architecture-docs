@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Agent 系统架构文档</title>
+  <title>Agent 系统架构与实战教程文档</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="基于 OpenClaw 与 Codex/Claude Code 的双层架构 Agent 集群系统工作流">
+  <meta name="description" content="基于 OpenClaw 与 Codex/Claude Code 的双层架构 Agent 集群系统工作流及新手指南">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
@@ -20,12 +20,16 @@
   <div id="app">正在加载文档，请稍候...</div>
   <script>
     window.$docsify = {
-      name: 'Agent 架构文档',
+      name: 'Agent 架构与实战文档',
       repo: '',
       auto2top: true,
       maxLevel: 3,
       subMaxLevel: 2,
       search: 'auto',
+      loadSidebar: true, // 启用侧边栏导航
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md' // 防止多级目录出现侧边栏丢失
+      }
     }
   </script>
   <!-- Docsify v4 核心 -->
