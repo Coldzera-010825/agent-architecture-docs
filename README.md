@@ -1,4 +1,4 @@
-# 基于 OpenClaw 与 Codex/Claude Code 的双层架构 Agent 集群系统
+# 3. 架构白皮书：基于 OpenClaw 的双层集群设计
 
 ## 文档目标
 
